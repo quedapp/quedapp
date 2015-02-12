@@ -1,15 +1,5 @@
 package com.example.usuario.quedapp;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -28,6 +18,16 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
 
 @TargetApi(18)
 public class CalendarioActivity extends Activity implements OnClickListener {
@@ -397,6 +397,8 @@ public class CalendarioActivity extends Activity implements OnClickListener {
             }
 
             // INTENT //
+
+
             Intent navegar = new Intent(CalendarioActivity.this, HorarioActivity.class);
             navegar.putExtra("diaSeleccionado", date_month_year);
             startActivity(navegar);

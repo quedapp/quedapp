@@ -1,22 +1,24 @@
 package com.example.usuario.quedapp;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.media.Image;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class FormularioActivity extends ActionBarActivity {
+public class FormularioActivity extends Activity {
 
     private TextView diaMostrado;
     private TextView horaMostrada;
     private Button btnFormulario;
+    private ImageButton mapsButton;
 
     private void initComponents() {
         // No permite girar la pantalla.
@@ -25,6 +27,7 @@ public class FormularioActivity extends ActionBarActivity {
         btnFormulario = (Button) findViewById(R.id.btnFormulario);
         diaMostrado = (TextView) this.findViewById(R.id.diaMostrado);
         horaMostrada = (TextView) this.findViewById(R.id.horaMostrada);
+        mapsButton = (ImageButton) this.findViewById(R.id.mapsButton);
 
     }
 
@@ -32,6 +35,8 @@ public class FormularioActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario);
+
+        addButtonListener();
 
         // No permite girar la pantalla.
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -61,6 +66,21 @@ public class FormularioActivity extends ActionBarActivity {
 
         btnFormulario.setOnClickListener(miEscuchadorClick);
 
+    }
+
+    public void addButtonListener() {
+
+        mapsButton = (ImageButton) findViewById(R.id.mapsButton);
+        mapsButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Toast.makeText(FormularioActivity.this, "ImageButton is working!", Toast.LENGTH_SHORT).show();
+                //Intent navegar = new Intent(FormularioActivity.this, MapsActivity.class);
+                //startActivity(navegar);
+
+            }
+        });
     }
 
     @Override
