@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagenfondo"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.usuario.quedapp.PantallaRegistro" >
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.83"
+        android:orientation="vertical"
+        android:background="@drawable/shape_fondotranslucido"
+        >
+
+        <TextView
+            android:id="@+id/DiaSeleccionado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/nombreaplicacion"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.53"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/subtitulo"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edtNameEvent"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/shape_tablaarriba"
+                android:ems="10"
+                android:paddingLeft="10dp"
+                android:hint="User" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtLocation"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_tablamedia"
+                android:ems="10"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:hint="Phone" />
+
+            <EditText
+                android:id="@+id/edtDescripcion"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_tablaabajo"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:hint="Email" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/shape_button"
+                android:text="Entrar" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

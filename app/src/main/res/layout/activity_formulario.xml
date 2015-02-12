@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF8115"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.usuario.quedapp.FormularioActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_fondotranslucido2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="750dp"
+            android:layout_weight="0.53"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edtNameEvent"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/shape_tablamedia"
+                android:ems="10"
+                android:hint="Event Name"
+                android:paddingLeft="10dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtLocation"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_tablamedia"
+                android:ems="10"
+                android:hint="Location"
+                android:inputType="phone"
+                android:paddingLeft="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="39dp"
+                    android:background="@drawable/shape_fondotranslucido"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/Day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="7dp"
+                        android:text="Day"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/diaMostrado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="TextView"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/shape_fondotranslucido"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/Hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="Hour"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/horaMostrada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="TextView"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtDescripcion"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_tablamedia"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/btnFormulario"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_button"
+                android:text="+add contact"
+                android:textColor="#fffdfff8" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

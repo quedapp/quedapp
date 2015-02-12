@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="top|left"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/diaMostrar"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="#FF8E2C"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>
